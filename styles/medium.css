@@ -1,0 +1,63 @@
+header {
+    height: 300px;
+}
+header picture img {
+    width: 250px;
+    height: 50px;
+}
+.header--title-container .header--button {
+    top: 238px;
+}
+.main--exchange-container {
+    padding-top: 46px;
+}
+.main--exchange-container .main--tables-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.main--currency-table {
+    width: 40%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 5%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.charge--currency-table {
+    width: 40%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 5%;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.main--product-detail .product--detail-title {
+    margin-top: 16px;
+}
+.main--product-detail .product--cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0 auto;
+}
+.main--generic-section {
+    height: 50vh;
+    background-image: url(../assets/imgs/bitcoinbaby_1_large.jpg);
+}
+.main--generic-section .generic--section-title {
+    padding-top: 30px;
+}
+.main--plans-container .plans--container-slides {
+    justify-content: center;
+    overflow-x: auto;
+}
+.main--plans-container .plans--container-slides .left {
+    margin-left: 48px;
+}
+.main--plans-container .plans--container-slides .right {
+    margin-right: 48px;
+}

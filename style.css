@@ -1,0 +1,640 @@
+/*
+1. Posicionamiento.
+2. Modelo de caja.
+3. Tipografía.
+4. Temas visuales.
+5. Otros.
+*/
+:root {
+    /*Colores*/
+    --bitcoin-orange: #F7931A;
+    --soft-orange: #FFE9D5;
+    --secondary-blue: #1A9AF7;
+    --soft-blue: #E7F5FF;
+    --warmblack: #201E1C;
+    --black: #282623;
+    --grey: #494949;
+    --white: #FAF8F7;
+    --just-white: #ffffff; 
+    --header-background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+html {
+    font-size: 62.5%;
+    font-family: 'DM sans', sans-serif;
+}
+header {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    min-width: 320px;
+    height: 334px;
+    text-align: center;
+    background: var(--header-background);
+}
+header picture img {
+    width: 150px;
+    height: 24px;
+    margin-top: 50px;
+    align-self: center;
+}
+.header--title-container {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    height: 218px;
+    margin-top: 40px;
+    align-self: center;
+}
+.header--title-container h1 {
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.header--title-container p {
+    margin-top: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: var(--soft-orange);
+}
+.header--title-container .header--button {
+    position: absolute;
+    left: calc(50% - 114.5px);
+    top: 270px;
+    display: block;
+    margin-top: 35px;
+    padding: 15px;
+    width: 229px;
+    height: 48px;
+    background-color: var(--white);
+    /*Sombra*/
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+    border: none;
+    border-radius: 5px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--warmblack);
+}
+.header--button span {
+    display: inline-block;
+    width: 13px;
+    height: 8px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/Arrow_down.png);
+}
+main {
+    width: 100%;
+    height: auto;
+    background-color: var(--white);
+}
+.main--exchange-container {
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+.main--exchange-container-title {
+    width: 90%;
+    min-width: 288px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+.main--exchange-container .backgroundImg {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    align-content: center;
+}
+.main--exchange-container .backgroundImg img {
+    margin-bottom: 50px;
+}
+.main--exchange-container .main--exchange-container-title h2 {
+    margin-bottom: 30px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--warmblack);    
+}
+.main--exchange-container .main--exchange-container-title p {
+    margin-bottom: 30px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    color: #505050;
+}
+
+/*Tabla de comisiones*/
+.charge--currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.charge--currency-table .currency--table-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--secondary-blue);
+    text-align: center;
+}
+.charge--currency-table .currency--table-container {
+    display: inline-block;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+}
+.charge--currency-table .currency--table-container table {
+    width: 100%;
+    height: 100%;
+}
+.charge--currency-table .currency--table-container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.charge--currency-table .currency--table-container .table__top-left {
+    border-top-left-radius: 1.5rem;
+}
+.charge--currency-table .currency--table-container .table__top-right {
+    border-top-right-radius: 1.5rem;
+}
+.charge--currency-table .currency--table-container .table__bottom-left {
+    border-bottom-left-radius: 1.5rem;
+}
+.charge--currency-table .currency--table-container .table__bottom-right {
+    border-bottom-right-radius: 1.5rem;
+}
+.charge--currency-table .currency--table-container .table-left {
+    padding: 10px 12px;
+    text-align: left;
+}
+.charge--currency-table .currency--table-container .table-right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #505050;
+}
+.charge--currency-table .currency--table-date {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 15px;
+    background-color: var(--soft-blue);
+    border-radius: 1.5rem;
+}
+.charge--currency-table .currency--table-date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warmblack);
+}
+
+/*Tabla de monedas*/
+
+.main--currency-table {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 360px;
+    margin: 0 auto;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+.main--currency-table .currency--table-title {
+    margin-bottom: 15px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 2.3rem;
+    color: var(--bitcoin-orange);
+    text-align: center;
+}
+.main--currency-table .currency--table-container {
+    display: inline-block;
+    width: 90%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+}
+.main--currency-table .currency--table-container table {
+    width: 100%;
+    height: 100%;
+}
+.main--currency-table .currency--table-container td {
+    width: 50%;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1.9rem;
+    color: var(--grey);
+    background-color: var(--just-white);
+}
+.main--currency-table .currency--table-container .table__top-left {
+    border-top-left-radius: 1.5rem;
+}
+.main--currency-table .currency--table-container .table__top-right {
+    border-top-right-radius: 1.5rem;
+}
+.main--currency-table .currency--table-container .table__bottom-left {
+    border-bottom-left-radius: 1.5rem;
+}
+.main--currency-table .currency--table-container .table__bottom-right {
+    border-bottom-right-radius: 1.5rem;
+}
+.main--currency-table .currency--table-container .table-left {
+    padding: 10px 12px;
+    text-align: left;
+}
+.main--currency-table .currency--table-container .table-right {
+    font-size: 1.4rem;
+    font-weight: normal;
+    line-height: 1.7rem;
+    color: #505050;
+}
+.main--currency-table .currency--table-container .trending-down {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-down_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--currency-table .currency--table-container .trending-up {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    margin-left: 10px;
+    background-image: url(./assets/icons/trending-up_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--currency-table .currency--table-date {
+    width: 70%;
+    min-width: 235px;
+    max-width: 500px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 15px;
+    background-color: var(--soft-orange);
+    border-radius: 1.5rem;
+}
+.main--currency-table .currency--table-date p {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    color: var(--warmblack);
+}
+
+.main--product-detail{
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 16px;
+    background-color: var(--warmblack);
+}
+.main--product-detail .batatabit--icon{
+    position: absolute;
+    left: calc(50% - 20px);
+    top: -12.5px;
+    width: 40px;
+    height: 25px;
+    background-image: url(./assets/imgs/Batata2.svg);
+}
+.main--product-detail .product--detail-title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 0 auto;
+    margin-top: 50px;
+    text-align: center;
+}
+.main--product-detail .product--detail-title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main--product-detail .product--detail-title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #909090;
+}
+.main--product-detail .product--cards-container .product--detail-card {
+    position: relative;
+    width: 100%;
+    min-width: 288px;
+    max-width: 360px;
+    height: auto;
+    padding: 16px;
+    padding-left: 20px;
+    padding-bottom: 22px;
+    margin: 16px auto;
+    background-color: var(--black);
+    border-radius: 1rem;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+.main--product-detail .product--cards-container .product--detail-card .clock {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/clock_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--product-detail .product--cards-container .product--detail-card .eye {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/eye_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--product-detail .product--cards-container .product--detail-card .money {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/dollar-sign_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--product-detail .product--cards-container .product--detail-card .check {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url(./assets/icons/check-circle_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.main--product-detail .product--cards-container .product--detail-card .product--card-title {
+    margin-top: 12px;
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--just-white);
+}
+.main--product-detail .product--cards-container .product--detail-card .product--card-body {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #909090;
+}
+.main--generic-section {
+    width: 100%;
+    min-width: 320px;
+    height: 75vh;
+    background-image: url(./assets/imgs/bitcoinbaby_1_small.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.main--generic-section .generic--section-title {
+    padding-top: 64px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+.main--plans-container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 64px;
+    padding-top: 64px;
+    height: auto;
+    text-align: center;
+    background-color: var(--white);
+}
+.main--plans-container .plans--title {
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+}
+.main--plans-container .plans--title h2 {
+    margin-bottom: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--black);
+}
+.main--plans-container .plans--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    color: #505050;
+}
+.main--plans-container .plans--container-slides {
+    display: flex;
+    width: 100%;
+    height: 316px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
+    scroll-padding: 60px;
+}
+.main--plans-container .plans--container-slides .plans--container-card {
+    position: relative;
+    top: 30px;
+    scroll-snap-align: center;
+    width: 60%;
+    min-width: 190px;
+    max-width: 300px;
+    margin: 0 24px;
+    height: 250px;
+    padding: 20px;
+    background-color: var(--just-white);
+    border-radius: 1.2rem;
+    box-shadow: 0px 4px 8px rgba(89, 73, 30, 0.16);
+}
+.main--plans-container .plans--container-slides .left {
+    margin-left: 52px;
+}
+.main--plans-container .plans--container-slides .right {
+    margin-right: 52px;
+}
+.main--plans-container .plans--container-slides .arrow-left {
+    position: absolute;
+    left: 12px;
+    top: 100px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/mdi_keyboard_arrow_down2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;   
+}
+.main--plans-container .plans--container-slides .arrow-right {
+    position: absolute;
+    right: 12px;
+    top: 100px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/mdi_keyboard_arrow_down.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;   
+}
+.main--plans-container .plans--container-slides .gap {
+    display: inline-block;
+    width: max-content;
+    color: var(--white);
+}
+.main--plans-container .plans--container-slides .plans--container-card .recommended {
+    position: absolute;
+    top: -15px;
+    left: calc(50% - 50.5px);
+    width: 101px;
+    height: 30px;
+    padding: 8px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    background-color: var(--bitcoin-orange);
+    color: var(--just-white);
+    border-radius: 1.2rem;
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container h3 {
+    margin-top: 16px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: black;
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container .plan--card-price span{
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 44px);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #363636;
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container .plan--card-price .week {
+    position: absolute;
+    top: 12px;
+    left: calc(50% - 30px);
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #363636;
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container .plan--card-price {
+    position: relative;
+    margin-top: 8px;
+    font-family: "inter";
+    font-size: 5.2rem;
+    font-weight: bold;
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container .plan--card-saving {
+    margin-top: 16px;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+    color: #505050;
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container .plan--card-ca {
+    margin-top: 16px;
+    width: 150px;
+    height: 40px;
+    background-color: var(--white);
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 0.4rem;
+    font-family: 'DM sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--warmblack);   
+}
+.main--plans-container .plans--container-slides .plans--container-card .plans--info-container .plan--card-ca span {
+    position: relative;
+    bottom: 1px;
+    left: 6px;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url(./assets/icons/arrow-right_1.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    vertical-align: middle;
+}
+footer {
+    position: relative;
+    width: 100%;
+    min-width: 320px;
+    height: 150px;
+    padding: 40px;
+    padding-top: 32px;
+    background-color: var(--bitcoin-orange);
+}
+.footer--social-media {
+    position: relative;
+    display: inline-block;
+    margin-left: 25px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+}
+.footer--social-media p {
+    margin-top: 8px;
+}
+.footer--social-media a{
+    text-decoration: none;
+    color: var(--just-white);
+}
+.footer--logo-batatabit {
+    position: absolute;
+    right: 70px;
+    top: 51px;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+    background-image: url(./assets/imgs/Batata.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.footer--register-brand {
+    position: absolute;
+    right: 58px;
+    top: 83px;
+    display: inline-block;
+    width: 64px;
+    height: 18px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--just-white);
+}
